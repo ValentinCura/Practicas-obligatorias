@@ -1,19 +1,14 @@
+import Tables from './components/tables/Tables';
 import './App.css'
 import React from 'react'
-import titlesArray from './components/watchList/WatchList';
-
 
 function App() {
-	return (
+  const netIncomes = [{brand: 'McDonalds', income: 1291283}, {brand: 'Burger King', income: 1927361}, {brand: 'KFC', income: 1098463}];
 
-		<div>
-			<h1>Peliculas de Nolan con imdRating mayor a 8</h1>
-
-			{titlesArray.map((movie, i) => (
-				<ul key={i}>
-					{movie}
-				</ul>))}
-		</div>
-	);
+  return (
+    <div>
+      <Tables receivedNetIncomes={netIncomes} />
+    </div >
+  );
 }
 export default App
