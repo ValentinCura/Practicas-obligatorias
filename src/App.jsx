@@ -1,14 +1,10 @@
-import Tables from './components/tables/Tables';
 import './App.css'
-import React from 'react'
+import Login from './components/login/Login'
 
 function App() {
-  const netIncomes = [{brand: 'McDonalds', income: 1291283}, {brand: 'Burger King', income: 1927361}, {brand: 'KFC', income: 1098463}];
 
   return (
-    <div>
-      <Tables receivedNetIncomes={netIncomes} />
-    </div >
-  );
+    <Login/>
+  )
 }
 export default App
