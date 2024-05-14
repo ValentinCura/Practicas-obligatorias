@@ -1,10 +1,12 @@
 import './App.css'
-import Login from './components/login/Login'
+import ShowList from './components/showList/ShowList'
+
+
 
 function App() {
 
   return (
-    <Login/>
+    <ShowList/>
   )
 }
 export default App

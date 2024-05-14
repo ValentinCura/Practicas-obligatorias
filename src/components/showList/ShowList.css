@@ -1,0 +1,27 @@
+#root{
+    text-align: center;
+}
+.Card{
+    gap: 2px;
+    width: 500px;
+    height: 100px;
+    
+}
+.Card > * {
+    display: flex;
+    text-align: center;
+    justify-content:center
+}
+.Complete-Card{
+    background-color: lightblue;
+    border: 5px solid black !important;
+    display: flex;
+}
+.deleteTask{
+    padding: 20px;
+    font-size: 34px;
+}
+.deleteTask:hover{
+    color: red;
+    cursor: pointer;
+}
